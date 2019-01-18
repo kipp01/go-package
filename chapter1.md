@@ -1,7 +1,5 @@
 先获取beego库下来:
 
-
-
 ```go
 go get "github.com/astaxie/beego/orm"
 ```
@@ -66,19 +64,25 @@ fmt.Println(u.Name)
 //fmt.Printf("NUM: %d, ERR: %v\n", num, err)
 }
 ```
-设置数据库的最大空闲连接
-orm.SetMaxIdleConns("default",数量)
-设置数据库的最大数据库连接（go>=1.2）
-orm.SetMaxOpenConns("default",数量)
-开始调试
-orm.Debug = true
-插入数据
-o.insert()//返回id，err
-批量插入
-o.insertMulti(并列插入数量,slice)//返回成功数量，err
-//更新，多个指定字段（,）分开，空默认更新所有
-o.update(接口,更新指定字段)//更新行数，err
+
+设置数据库的最大空闲连接  
+orm.SetMaxIdleConns\("default",数量\)  
+设置数据库的最大数据库连接（go&gt;=1.2）  
+orm.SetMaxOpenConns\("default",数量\)  
+开始调试  
+orm.Debug = true  
+插入数据  
+o.insert\(\)//返回id，err  
+批量插入  
+o.insertMulti\(并列插入数量,slice\)//返回成功数量，err  
+
+
+更新，多个指定字段（,）分开，空默认更新所有  
+o.update\(接口,更新指定字段\)//更新行数，err  
+
+
 查询
+
 ```
 var user User
 user := user{Id:1}
@@ -104,7 +108,9 @@ qs.Filter("profile__age__gt",12)// WHERE profile.age >17
 示例limit
 qs.Limit(10,20)
 ```
+
 删除
+
 ```
 o.delete(&user{Id:1});//返回行，err
 
