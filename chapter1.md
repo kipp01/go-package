@@ -74,16 +74,14 @@ orm.Debug = true
 插入数据  
 o.insert\(\)//返回id，err  
 批量插入  
-o.insertMulti\(并列插入数量,slice\)//返回成功数量，err  
-
+o.insertMulti\(并列插入数量,slice\)//返回成功数量，err
 
 更新，多个指定字段（,）分开，空默认更新所有  
-o.update\(接口,更新指定字段\)//更新行数，err  
-
+o.update\(接口,更新指定字段\)//更新行数，err
 
 查询
 
-```
+```go
 var user User
 user := user{Id:1}
 err := o.Read(&user)
@@ -111,7 +109,7 @@ qs.Limit(10,20)
 
 删除
 
-```
+```go
 o.delete(&user{Id:1});//返回行，err
 
 使用原生sql
