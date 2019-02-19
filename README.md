@@ -91,6 +91,16 @@ https://github.com/zsais/go-gin-prometheus
 26：配置解决方案包
 https://github.com/spf13/viper
 https://github.com/lalamove/konfig
+
+27: mysql
+https://github.com/go-sql-driver/mysql
+支持 database/sql，全部采用 go写。
+*
+https://github.com/ziutek/mymysql
+支持 database/sql，也支持自定义的接口，全部采用 go写。
+*
+https://github.com/Philio/GoMySQL
+不支持 database/sql，自定义接口，全部采用 go 写。
 ```
 
 #  {#-}
