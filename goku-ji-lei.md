@@ -1,5 +1,4 @@
 ```go
-
 1 ： go  二维码
 https://github.com/tuotoo/qrcode
 
@@ -113,8 +112,6 @@ https://github.com/lalamove/konfig
 * [How-to-Make-a-Computer-Operating-System](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
   如何做一个操作系统
 
-
-
 ### 框架 {#-}
 
 * [go-micro](https://github.com/micro/go-micro)
@@ -145,11 +142,10 @@ https://github.com/lalamove/konfig
 
 * [centrifugo](https://github.com/centrifugal/centrifugo)
   语言无关的及时通讯
-* 
-### 网关 {#-}
-
-* [traefik](https://github.com/containous/traefik)
+* ### 网关 {#-}
+* [traefik](https://github.com/containous/traefik)  
   基于容器的网关
+
 * [kong](https://github.com/Kong/kong)
 
 ### Metric Logging Traceing {#metric-logging-traceing}
